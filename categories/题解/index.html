@@ -65,9 +65,8 @@
 <nav class="menu dis-select"><a class="nav-item active" href="/">博客</a><a class="nav-item" href="/daily/">生活</a><a class="nav-item" href="/notes/">便笺</a><a class="nav-item" href="/about/">关于</a></nav></header>
 
 <div class="widgets">
-<div class="widget-wrap" id="markdown"><div class="widget-header cap dis-select"><span class="name">Welcome to the edge of INTERNET.</span></div><div class="widget-body fs14"><p>欢迎来到一个不知名的高中生个人博客。<br />
-<br><br />
-本站记录一些 OI 学习经历，以及各种杂七杂八。</p>
+<div class="widget-wrap" id="markdown"><div class="widget-header cap dis-select"><span class="name">Welcome to the edge of INTERNET.</span></div><div class="widget-body fs14"><p>欢迎来到一个不知名的高中生个人博客。 <br> 本站记录一些 OI
+学习经历，以及各种杂七杂八。</p>
 </div></div>
 
 <div class="widget-wrap" id="recent"><div class="widget-header cap dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><div class="more-item"><a class="title" href="/2022/07/29/P1721%20%5BNOI2016%5D%20%E5%9B%BD%E7%8E%8B%E9%A5%AE%E6%B0%B4%E8%AE%B0%20%E9%A2%98%E8%A7%A3/">P1721 [NOI2016] 国王饮水记 题解</a></div></div></div>
@@ -115,10 +114,16 @@
 </div>
 
   <div class="post-list post"><a class="post-card post " href="/2022/07/29/P1721%20%5BNOI2016%5D%20%E5%9B%BD%E7%8E%8B%E9%A5%AE%E6%B0%B4%E8%AE%B0%20%E9%A2%98%E8%A7%A3/">
-<article class="md"><h2 class="post-title">P1721 [NOI2016] 国王饮水记 题解</h2><div class="excerpt"><p> 题意简述
-给定 nnn 个城市，第 iii 个城市收集到了高度为 hih_ihi​ 的水，要求通过使用 kkk 次地下连通系统，每次使用可以使若干个城市的水箱相连通，然后使它们的水位变为它们的平均值。要求求出 kkk 次操作后， 111 号城市水箱中的水位的最大值。
- 策略选择及最优性证明
-引理0：我们一定不会对初始水位不高于 111 号的水箱操作，操作与操作之间选择的水箱一定不会有重叠。...</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2022-07-29T14:09:04.384Z">2022-07-29</time></span><span class="cap breadcrumb">题解</span></div></article>
+<article class="md"><h2 class="post-title">P1721 [NOI2016] 国王饮水记 题解</h2><div class="excerpt"><p>题意简述
+给定  个城市，第  个城市收集到了高度为  的水，要求通过使用 
+次地下连通系统，每次使用可以使若干个城市的水箱相连通，然后使它们的水位变为它们的平均值。要求求出
+ 次操作后，  号城市水箱中的水位的最大值。
+策略选择及最优性证明
+引理0：我们一定不会对初始水位不高于 
+号的水箱操作，操作与操作之间选择的水箱一定不会有重叠。
+证明：显然。
+
+引理1：对于初始水位...</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2022-07-29T14:09:04.384Z">2022-07-29</time></span><span class="cap breadcrumb">题解</span></div></article>
 </a></div>
   
 
@@ -127,8 +132,13 @@
 
 
       
-<footer class="page-footer reveal fs12"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs14">博客</span><a href="/">近期</a><a href="/categories/">分类</a><a href="/tags/">标签</a><a href="/archives/">归档</a></div><div class="sitemap-group"><span class="fs14">生活</span><a href="/daily/">杂七杂八</a></div><div class="sitemap-group"><span class="fs14">朋友们</span><a href="/friends/">友链</a></div><div class="sitemap-group"><span class="fs14">更多</span><a href="/about/">关于本站</a><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/455093">Luogu</a></div></div><div class="text"><p>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
-<p>这是 <a href="http://schi2oid.github.io/">@Allenhyk</a> 的小站，使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.8.0" title="v1.8.0">Stellar</a> 作为主题。</p>
+<footer class="page-footer reveal fs12"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs14">博客</span><a href="/">近期</a><a href="/categories/">分类</a><a href="/tags/">标签</a><a href="/archives/">归档</a></div><div class="sitemap-group"><span class="fs14">生活</span><a href="/daily/">杂七杂八</a></div><div class="sitemap-group"><span class="fs14">朋友们</span><a href="/friends/">友链</a></div><div class="sitemap-group"><span class="fs14">更多</span><a href="/about/">关于本站</a><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/455093">Luogu</a></div></div><div class="text"><p>本博客所有文章除特别声明外，均采用 <a
+target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA
+4.0</a> 许可协议，转载请注明出处。</p>
+<p>这是 <a href="http://schi2oid.github.io/"><span class="citation"
+data-cites="Allenhyk">@Allenhyk</span></a> 的小站，使用 <a
+target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.8.0"
+title="v1.8.0">Stellar</a> 作为主题。</p>
 </div></footer>
 
       <div class='float-panel mobile-only blur' style='display:none'>
