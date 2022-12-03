@@ -183,7 +183,7 @@ mjx-container[display="true"] + br {
 学习经历，以及各种杂七杂八。</p>
 </div></div>
 
-<div class="widget-wrap" id="recent"><div class="widget-header cap dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><div class="more-item"><a class="title" href="/2022/10/30/CSP-S%202022%20%E6%B8%B8%E8%AE%B0/">CSP-S 2022 游记</a></div><div class="more-item"><a class="title" href="/2022/08/26/P3426%20%5BPOI2005%5DSZA-Template%20%E9%A2%98%E8%A7%A3/">P3426 [POI2005]SZA-Template 题解</a></div><div class="more-item"><a class="title" href="/2022/08/26/8%E6%9C%8822%E6%97%A5%E6%A8%A1%E6%8B%9F%E8%B5%9B%20T0%20%E5%B0%8FW%E7%9A%84%E7%8E%BB%E7%92%83%E5%BC%B9%E7%8F%A0/">8月22日模拟赛 T0 小W的玻璃弹珠 题解</a></div><div class="more-item"><a class="title" href="/2022/08/03/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9F%A5%E8%AF%86%E7%82%B9%E5%A4%8D%E4%B9%A0/">字符串知识点复习</a></div><div class="more-item"><a class="title" href="/2022/07/29/P1721%20%5BNOI2016%5D%20%E5%9B%BD%E7%8E%8B%E9%A5%AE%E6%B0%B4%E8%AE%B0%20%E9%A2%98%E8%A7%A3/">P1721 [NOI2016] 国王饮水记 题解</a></div></div></div>
+<div class="widget-wrap" id="recent"><div class="widget-header cap dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><div class="more-item"><a class="title" href="/2022/12/03/%E5%AE%B9%E6%96%A5&%E5%8F%8D%E6%BC%94%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">容斥&反演 学习笔记</a></div><div class="more-item"><a class="title" href="/2022/10/30/CSP-S%202022%20%E6%B8%B8%E8%AE%B0/">CSP-S 2022 游记</a></div><div class="more-item"><a class="title" href="/2022/08/26/P3426%20%5BPOI2005%5DSZA-Template%20%E9%A2%98%E8%A7%A3/">P3426 [POI2005]SZA-Template 题解</a></div><div class="more-item"><a class="title" href="/2022/08/26/8%E6%9C%8822%E6%97%A5%E6%A8%A1%E6%8B%9F%E8%B5%9B%20T0%20%E5%B0%8FW%E7%9A%84%E7%8E%BB%E7%92%83%E5%BC%B9%E7%8F%A0/">8月22日模拟赛 T0 小W的玻璃弹珠 题解</a></div><div class="more-item"><a class="title" href="/2022/08/03/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9F%A5%E8%AF%86%E7%82%B9%E5%A4%8D%E4%B9%A0/">字符串知识点复习</a></div></div></div>
 </div>
 
 
@@ -225,8 +225,22 @@ mjx-container[display="true"] + br {
   </nav>
 </div>
 
-  <div class="post-list post"><a class="post-card post " href="/2022/10/30/CSP-S%202022%20%E6%B8%B8%E8%AE%B0/">
-<article class="md"><div class="post-cover"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/assets/941959.png"/></div><h2 class="post-title">CSP-S 2022 游记</h2><div class="excerpt"><p>考场心路历程14:10走进考场。这键盘好酷炫啊。随便敲敲键盘。14:20开始解压题目。T1 好像会做。14:30开码 T1，此时没有注意到四个景点互不相同的条件。14:50注意到了条件。想了 ，不会。开 T2。16:30调完 T2，切窗口眼测过了大样例。不放心又写了个 check。估分 。16:45开 T3。17:00有了 T3 暴力思路。17:50T3 码完，过了中等样例，估分 。18:0...</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2022-10-30T11:56:06.942Z">2022-10-30</time></span><span class="cap breadcrumb">游记</span></div></article>
+  <div class="post-list post"><a class="post-card post " href="/2022/12/03/%E5%AE%B9%E6%96%A5&%E5%8F%8D%E6%BC%94%20%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+<article class="md"><h2 class="post-title">容斥&反演 学习笔记</h2><div class="excerpt"><p>反演
+undefinedhttps://vfleaking.blog.uoj.ac/slide/87#/
+以上是神级学习资料。
+反演的本质
+本质上来说，反演的时候我们一般会遇到形如下面式子的形式：
+
+其中 
+是我们希望求得的答案，
+容易直接计算得出，
+是系数。一般来说，我们可能会看到形如这样的描述：设  表示恰好拥有  个属性的方案数， 为不超过/钦定拥有
+
+个属性的方...</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2022-12-03T03:27:27.332Z">2022-12-03</time></span><span class="cap breadcrumb">整理</span></div></article>
+</a><a class="post-card post " href="/2022/10/30/CSP-S%202022%20%E6%B8%B8%E8%AE%B0/">
+<article class="md"><div class="post-cover"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/assets/941959.png"/></div><h2 class="post-title">CSP-S 2022 游记</h2><div class="excerpt"><p>考场心路历程
+14:10走进考场。这键盘好酷炫啊。随便敲敲键盘。14:20开始解压题目。T1 好像会做。14:30开码 T1，此时没有注意到四个景点互不相同的条件。14:50注意到了条件。想了 ，不会。开 T2。16:30调完 T2，切窗口眼测过了大样例。不放心又写了个 check。估分 。16:45开 T3。17:00有了 T3 暴力思路。17:50T3 码...</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2022-10-30T11:56:06.942Z">2022-10-30</time></span><span class="cap breadcrumb">游记</span></div></article>
 </a><a class="post-card post " href="/2022/08/26/P3426%20%5BPOI2005%5DSZA-Template%20%E9%A2%98%E8%A7%A3/">
 <article class="md"><h2 class="post-title">P3426 [POI2005]SZA-Template 题解</h2><div class="excerpt"><p>结论题可爱
 题意简述
