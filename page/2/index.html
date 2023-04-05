@@ -4,7 +4,7 @@
 <head>
   <meta name="generator" content="Hexo 6.2.0">
   <meta charset="utf-8">
-  <meta name="robots" content="noindex,follow">
+  
 
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   <link rel='dns-prefetch' href='https://fastly.jsdelivr.net'>
@@ -18,12 +18,12 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" content="#f8f8f8">
-  <title>标签：动态规划 - hykの小站</title>
+  <title>hykの小站</title>
 
   
     <meta property="og:type" content="website">
 <meta property="og:title" content="hykの小站">
-<meta property="og:url" content="http://schi2oid.github.io/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/index.html">
+<meta property="og:url" content="http://schi2oid.github.io/page/2/index.html">
 <meta property="og:site_name" content="hykの小站">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="Allenhyk">
@@ -50,7 +50,119 @@
 
 
   
-</head>
+<style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 <body>
   
@@ -89,13 +201,11 @@
 
       
 
-  
-
 
   <div class='nav-wrap'>
   <nav class='sub post cap'>
     
-      <a href='/'>近期发布</a>
+      <a class='active' href='/'>近期发布</a>
     
     
       
@@ -104,7 +214,7 @@
     
     
       
-        <a class='active' href='/tags'>标签：动态规划</a>
+        <a href='/tags'>标签</a>
       
     
     
@@ -115,33 +225,30 @@
   </nav>
 </div>
 
-  <div class="post-list post"><a class="post-card post " href="/2023/04/05/CF1810G%20The%20Maximum%20Prefix%20%E9%A2%98%E8%A7%A3/">
-<article class="md"><h2 class="post-title">CF1810G The Maximum Prefix 题解</h2><div class="excerpt"><p>典型的反转 ，整理一下此类题思路。
-题意简述
-你现在要按照如下方式生成一个长度为  的数组：
+  <div class="post-list post"><a class="post-card post " href="/2022/07/29/P1721%20%5BNOI2016%5D%20%E5%9B%BD%E7%8E%8B%E9%A5%AE%E6%B0%B4%E8%AE%B0%20%E9%A2%98%E8%A7%A3/">
+<article class="md"><h2 class="post-title">P1721 [NOI2016] 国王饮水记 题解</h2><div class="excerpt"><p>题意简述
+给定  个城市，第  个城市收集到了高度为  的水，要求通过使用 
+次地下连通系统，每次使用可以使若干个城市的水箱相连通，然后使它们的水位变为它们的平均值。要求求出
+ 次操作后，  号城市水箱中的水位的最大值。
+策略选择及最优性证明
+引理0：我们一定不会对初始水位不高于 
+号的水箱操作，操作与操作之间选择的水箱一定不会有重叠。
+证明：显然。
 
-对于 ，有  的概率设 ，有  的概率设 。
-
-对于一个长度为  的数组，计算
-。特别地，。此时  数组的最大前缀和 。现在给定  个正整数 。该数组最大前缀和为  时，该数组的分数为 。
-要求对于所有 ，求出生成出的数组的期望分数对  取模的结果。
-。
-思路分析
-正向考虑困...</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2023-04-05T06:40:39.507Z">2023-04-05</time></span><span class="cap breadcrumb">题解</span></div></article>
-</a><a class="post-card post " href="/2023/03/20/3.20%20%E8%81%94%E8%80%83%20T2%20Bridge%20%E9%A2%98%E8%A7%A3/">
-<article class="md"><h2 class="post-title">3/20 联考 T2 Bridge 题解</h2><div class="excerpt"><p>题意简述
-有 
-个人在数轴上等速移动，每个人有一个初始方向，两人相遇时，有  的概率左边的人会消失， 的概率右边的人会消失，求最终恰有
- 个人抵达数轴最左端， 个人抵达数轴最右端的概率。
-复杂度要求 。
-题解
-首先，我们找到最靠右的抵达数轴左端点的人 ，那么最靠左的抵达数轴右端点的人一定在他的右边，且一定恰是
-。简单分类讨论易证。
-接下来，我们枚举 
-所在的位置，分别求其左...</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2023-03-20T12:57:16.523Z">2023-03-20</time></span><span class="cap breadcrumb">题解</span></div></article>
+引理1：对于初始水位...</p></div><div class="meta cap"><span class="cap" id="post-meta">发布于&nbsp;<time datetime="2022-07-29T14:09:04.384Z">2022-07-29</time></span><span class="cap breadcrumb">题解</span></div></article>
 </a></div>
   
-
+  <div class='paginator-wrap dis-select'>
+    <a class='paginator prev' href='/'>
+      <img src='https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/arrow/f049bbd4e88ec.svg'/>
+    </a>
+    <div class='paginator current'>
+      2<span class='sep'></span>2
+    </div>
+    <a class='paginator next disable' href='/'>
+      <img src='https://fastly.jsdelivr.net/gh/cdn-x/placeholder@1.0.1/arrow/064b95430caf4.svg'/>
+    </a>
+  </div>
 
 
 
